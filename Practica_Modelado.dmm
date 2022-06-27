@@ -1,0 +1,423 @@
+{
+	"tables": {
+		"f0cd206c-2868-42a7-8688-7ebf18c04f4b": {
+			"id": "f0cd206c-2868-42a7-8688-7ebf18c04f4b",
+			"visible": true,
+			"name": "Autor",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "7cb37cbb-82e5-417b-84cc-850fd6e6da83",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "1603c565-f308-429b-a7f5-7edd9901a4c9",
+					"name": "nombre",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "4b2a59a6-0e7f-4c7a-8e49-794297c71866",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"internalColumnIdRef": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"f50c032b-32de-48f3-9006-49a87f50d741": {
+			"id": "f50c032b-32de-48f3-9006-49a87f50d741",
+			"visible": true,
+			"name": "Categoria",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "831f17a5-da0c-44b2-af42-0a9c87083959",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "7167c704-be67-496c-8c06-30ffb051a22f",
+					"name": "nombre",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [
+				"723fd55d-ff6d-4c0a-a52f-aef54dc9b145"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "ad51d4fd-aeed-4c6c-8979-f4302117a810",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "c0f03867-0258-42d7-afa8-832f278f45a3",
+							"colid": "831f17a5-da0c-44b2-af42-0a9c87083959"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"internalColumnIdRef": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"e544d9ee-0885-41df-8a34-79bf0a177c84": {
+			"id": "e544d9ee-0885-41df-8a34-79bf0a177c84",
+			"visible": true,
+			"name": "Curso",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "b2ee16b8-e950-4a13-bbb0-93a15da8ee60",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "77efee3f-9d44-489a-a2fa-5777f8385a53",
+					"name": "Categoria",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Categoria"
+				},
+				{
+					"id": "82ae5413-6aa0-4709-9a99-4be7ebdb354d",
+					"name": "Autores",
+					"datatype": "f0cd206c-2868-42a7-8688-7ebf18c04f4b",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "94c46178-bd40-4048-a6ce-d0e2d02338c4",
+					"name": "Lecciones",
+					"datatype": "631f4616-5a47-48a6-a41b-c7d14829ac95",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [
+				"723fd55d-ff6d-4c0a-a52f-aef54dc9b145"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d2be3270-e401-44e9-b04d-43147e18060f",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "ad08a307-bd20-43a4-9be5-be269af31b2e",
+							"colid": "b2ee16b8-e950-4a13-bbb0-93a15da8ee60"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"internalColumnIdRef": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"631f4616-5a47-48a6-a41b-c7d14829ac95": {
+			"id": "631f4616-5a47-48a6-a41b-c7d14829ac95",
+			"visible": true,
+			"name": "Leccion",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "1a2d563a-5b59-48e2-8d22-08c27917c2ad",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "ab6f8ea0-6037-4bbd-be5c-396351f6fd66",
+					"name": "nombre",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "5198c8e5-7242-4306-b615-8acc8516cc6e",
+					"name": "idVideo",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "58cf6f92-0786-49a7-96b8-ebec6254f338",
+					"name": "idArticulo",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "201174fb-bf17-424b-bb16-8cf5f434f615",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true,
+			"internalColumnIdRef": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		}
+	},
+	"relations": {
+		"723fd55d-ff6d-4c0a-a52f-aef54dc9b145": {
+			"id": "723fd55d-ff6d-4c0a-a52f-aef54dc9b145",
+			"visible": true,
+			"name": "Categoria_Curso",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "ad51d4fd-aeed-4c6c-8979-f4302117a810",
+			"parent": "f50c032b-32de-48f3-9006-49a87f50d741",
+			"child": "e544d9ee-0885-41df-8a34-79bf0a177c84",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "df5e4bd1-2a14-4a14-99af-60e2a94365d9",
+					"parentcol": "831f17a5-da0c-44b2-af42-0a9c87083959",
+					"childcol": "77efee3f-9d44-489a-a2fa-5777f8385a53"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "Practica_Modelado",
+		"id": "c6aaaed5-8493-4f70-92c8-2305ec99d6a9",
+		"activeDiagram": "feebe56c-71fb-4ee9-929e-bbf46a09fcaa",
+		"desc": "",
+		"path": "",
+		"type": "MONGODB",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 4,
+			"minor": 6,
+			"extra": 0
+		},
+		"embeddedInParentsIsDisplayed": true,
+		"schemaContainerIsDisplayed": false,
+		"cardinalityIsDisplayed": false,
+		"estimatedSizeIsDisplayed": false,
+		"stickyParentIsDisplayed": false,
+		"def_coltopk": true,
+		"def_validationLevel": "na",
+		"def_validationAction": "na",
+		"def_collation": "",
+		"def_others": "",
+		"lastSaved": "Mon Jun 27 2022 13:04:57 GMT+0200 (hora de verano de Europa central)",
+		"writeFileParam": false
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"feebe56c-71fb-4ee9-929e-bbf46a09fcaa": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "feebe56c-71fb-4ee9-929e-bbf46a09fcaa",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"f0cd206c-2868-42a7-8688-7ebf18c04f4b": {
+					"referencedItemId": "f0cd206c-2868-42a7-8688-7ebf18c04f4b",
+					"x": 865,
+					"y": 187,
+					"gHeight": 63,
+					"gWidth": 179,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"f50c032b-32de-48f3-9006-49a87f50d741": {
+					"referencedItemId": "f50c032b-32de-48f3-9006-49a87f50d741",
+					"x": 129,
+					"y": 96,
+					"gHeight": 63,
+					"gWidth": 179,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"e544d9ee-0885-41df-8a34-79bf0a177c84": {
+					"referencedItemId": "e544d9ee-0885-41df-8a34-79bf0a177c84",
+					"x": 502,
+					"y": 76,
+					"gHeight": 207,
+					"gWidth": 215,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"631f4616-5a47-48a6-a41b-c7d14829ac95": {
+					"referencedItemId": "631f4616-5a47-48a6-a41b-c7d14829ac95",
+					"x": 860,
+					"y": 77,
+					"gHeight": 99,
+					"gWidth": 187,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd"
+		}
+	},
+	"order": []
+}
