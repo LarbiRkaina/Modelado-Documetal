@@ -16,4 +16,4 @@ En definitiva quedaría así:
 
 
 
-![model](C:\lemoncode\Modelado\model.png)
+![model](model.png)
