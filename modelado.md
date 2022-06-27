@@ -10,9 +10,9 @@ He creado dos documentos, el de ***Lección*** y el de ***Autor***. Al de **Lecc
 
 Para la **collection Curso**, le he pasado la **collection  Categoría** en una relación de  uno a muchos, le he añadido como campos un array de Autores(que es un array del *document Autor*) y un array de Lecciones(que es un array de *document Lección*).
 
+Y por último he creado una **collection** de nombre **Autor** pasándole como campos un id de tipo objectid, el nombre del autor tipo string y el apellido también tipo string.
 
-
-En definitiva quedaría así:
+En definitiva el modelado quedaría así:
 
 
 
