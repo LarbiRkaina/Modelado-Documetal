@@ -290,6 +290,79 @@
 			"validationAction": "na",
 			"collation": "",
 			"others": ""
+		},
+		"e6b56c3d-e975-48b8-88f4-0dfd0a44bf12": {
+			"id": "e6b56c3d-e975-48b8-88f4-0dfd0a44bf12",
+			"visible": true,
+			"name": "Autor",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "eee8b5b9-09e9-4874-b48f-678ed16c7d5d",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "f872bb70-1621-4128-921a-795a0776da1e",
+					"name": "nombre",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "13d1eb59-f5b6-41d1-99ac-0e5283612c9f",
+					"name": "apellido",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "80070274-260b-400e-8835-29a9aa237a70",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "dec8e530-2982-4015-b87f-cea306e37a09",
+							"colid": "eee8b5b9-09e9-4874-b48f-678ed16c7d5d"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"internalColumnIdRef": "",
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
 		}
 	},
 	"relations": {
@@ -350,7 +423,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": "Mon Jun 27 2022 13:04:57 GMT+0200 (hora de verano de Europa central)",
+		"lastSaved": "27/6/2022",
 		"writeFileParam": false
 	},
 	"otherObjects": {},
@@ -408,6 +481,17 @@
 					"gWidth": 187,
 					"color": "#ffffff",
 					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"e6b56c3d-e975-48b8-88f4-0dfd0a44bf12": {
+					"referencedItemId": "e6b56c3d-e975-48b8-88f4-0dfd0a44bf12",
+					"x": 130,
+					"y": 242,
+					"gHeight": 81,
+					"gWidth": 179,
+					"color": "#ffffff",
+					"background": "#03a9f4",
 					"resized": false,
 					"autoExpand": true
 				}
